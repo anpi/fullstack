@@ -8,11 +8,11 @@ end note
 selain->palvelin: POST /new_note
 palvelin->selain: status 302
 selain->palvelin: GET /notes
-palvelin->selain: status 304
+palvelin->selain: status 200
 selain->palvelin: GET /main.css
-palvelin->selain: status 304, sivun CSS
+palvelin->selain: status 200, sivun CSS
 selain->palvelin: GET /main.js
-palvelin->selain: status 304, sivun JavaScript
+palvelin->selain: status 200, sivun JavaScript
 selain->palvelin: GET /data.json
 palvelin->selain: status 200, muistiinpanot
 
