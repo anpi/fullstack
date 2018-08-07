@@ -1,0 +1,15 @@
+title muistiinpanojen talletus SPA-sivussa
+
+kayttaja->selain:
+note left of selain
+    kayttaja klikkaa Talleta-linkkia
+end note
+
+selain->palvelin: POST /new_note_spa
+palvelin->selain: status 201, status-koodi JSON
+
+selain->kayttaja:
+note right of kayttaja
+    selain lisaa kayttajan luoman muistiinpanon
+    dokumenttiin
+end note
